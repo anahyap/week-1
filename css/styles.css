@@ -1,0 +1,40 @@
+body {
+    background-color: #846B8A;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #FAE3E3;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-size: 24px;
+    color: #C98BB9;
+}
+
+a {
+    color: white;
+    padding: 20px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+p, ol, tr {
+    color: white;
+}
+
+nav a {
+    color: #C98BB9;
+    font-size: 18px;
+}
+
+.input {
+    color: #F7D4BC;
+}
+
+.input label {
+    color: purple;
+}
