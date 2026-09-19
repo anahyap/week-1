@@ -1,40 +1,71 @@
+:root {
+    --color-primary: #846b8a;
+    --color-primary-dark: black;
+    --color-text: white; 
+    --item-padding: 20px;
+}
+
+
 body {
-    background-color: #846B8A;
-    max-width: 500px;
-    margin: 0 auto;
+  background-color: var(--color-primary);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 main {
-    background-color: #FAE3E3;
-    padding: 20px;
+  background-color: #fae3e3;
+  padding: var(--item-padding);
 }
 
-h1, h2, h3 {
-    font-size: 24px;
-    color: #C98BB9;
+h1,
+h2,
+h3 {
+  font-size: 24px;
+  color: purple;
 }
 
 a {
-    color: white;
-    padding: 20px;
-    border: 5px solid white;
-    border-radius: 10px;
-    margin: 5px 10px;
+  color: var(--color-text);
+  padding: var(--item-padding);
+  border: 5px solid white;
+  border-radius: 10px;
+  margin: 5px 10px;
+  display: inline-block;
 }
 
-p, ol, tr {
-    color: white;
+p,
+tr {
+  color: var(--color-primary-dark);
 }
 
 nav a {
-    color: #C98BB9;
-    font-size: 18px;
+  color: #c98bb9;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .input {
-    color: #F7D4BC;
+  color: fuchsia;
 }
 
 .input label {
-    color: purple;
+  color: purple;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.item {
+  background-color: #c98bb9;
+  color: var(--color-text); 
+}
+
+a:hover {
+  transition: all 0.2s ease;
+  color: fuchsia;
+  transform: translate(10px, -5px);
+  text-decoration: underline;
 }
